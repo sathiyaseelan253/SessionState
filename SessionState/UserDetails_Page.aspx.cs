@@ -8,7 +8,7 @@ namespace SessionState
 
         protected void btnSendData_Click(object sender, EventArgs e)
         {
-            Session["FirstName"] = txtFirstName.Text;
+            Session["First_Name"] = txtFirstName.Text;
             Session["LastName"] = txtLastName.Text;
             Session["Email"] = txtEmail.Text;
             Session["Address"] = txtAddress.Text;

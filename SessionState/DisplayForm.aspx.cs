@@ -7,9 +7,9 @@ namespace SessionState
         protected void Page_Load(object sender, EventArgs e)
         {
             
-                if (Session["FirstName"] != null)
+                if (Session["First_Name"] != null)
                 {
-                    lblFirstName.Text = Session["FirstName"].ToString();
+                    lblFirstName.Text = Session["First_Name"].ToString();
                 }
             if (Session["LastName"] != null)
             {
