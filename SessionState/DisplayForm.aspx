@@ -5,70 +5,38 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        .auto-style4 {
+            width: 1420px;
+            height: 119px;
+            text-align:center;
+            color:limegreen;
+        }
+        .auto-style2 {
+            width: 1491px;
+            height: 69px;
+            font-size:30px;
+            color:cornflowerblue;
+            text-align: center;
+        }
+        .auto-style3 {
+            width: 1515px;
+            height: 52px;
+            font-size:25px;
+            color:cornflowerblue;
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
       <div style="font-family: Arial">
 <table>
-    <tr>
-        <td colspan="2">
-            <h1>Dispalying Details of User Entered </h1>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <b>First_Name</b>
-        </td>
-        <td>
-            :<asp:Label ID="lblFirstName" runat="server">
-            </asp:Label>
-        </td>
-    </tr>
-     <tr>
-        <td>
-            <b>Last_Name</b>
-        </td>
-        <td>
-            :<asp:Label ID="lblLastName" runat="server">
-            </asp:Label>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <b>Email</b>
-        </td>
-        <td>
-            :<asp:Label ID="lblEmail" runat="server">
-            </asp:Label>
-        </td>
-    </tr>
-     <tr>
-        <td>
-            <b>Address</b>
-        </td>
-        <td>
-            :<asp:Label ID="lblAddress" runat="server">
-            </asp:Label>
-        </td>
-    </tr>
-     <tr>
-        <td>
-            <b>City</b>
-        </td>
-        <td>
-            :<asp:Label ID="lblCity" runat="server">
-            </asp:Label>
-        </td>
-    </tr>
-     <tr>
-        <td>
-            <b>PinCode</b>
-        </td>
-        <td>
-            :<asp:Label ID="lblPinCode" runat="server">
-            </asp:Label>
-        </td>
-    </tr>
+    <h1 class="auto-style1">&nbsp;</h1>
+    <h1 class="auto-style4">Welcome Customer</h1>
+    <p class="auto-style2">Account created successfully!!</p>
+    <p class="auto-style3">Have a great day</p>
 </table>
     </form>
 </body>

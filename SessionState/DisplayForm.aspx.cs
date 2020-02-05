@@ -7,30 +7,7 @@ namespace SessionState
         protected void Page_Load(object sender, EventArgs e)
         {
             
-                if (Session["First_Name"] != null)
-                {
-                    lblFirstName.Text = Session["First_Name"].ToString();
-                }
-            if (Session["LastName"] != null)
-            {
-                lblLastName.Text = Session["LastName"].ToString();
-            }
-            if (Session["Email"] != null)
-                {
-                    lblEmail.Text = Session["Email"].ToString();
-                }
-            if (Session["Address"] != null)
-            {
-                lblAddress.Text = Session["Address"].ToString();
-            }
-            if (Session["City"] != null)
-            {
-                lblCity.Text = Session["City"].ToString();
-            }
-            if (Session["Pin Code"] != null)
-            {
-                lblPinCode.Text = Session["Pin Code"].ToString();
-            }
+              
 
 
         }
