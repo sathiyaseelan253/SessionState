@@ -62,7 +62,7 @@ namespace SessionState
             if (status)
             {
 
-                  Response.Redirect("DisplayForm.aspx");
+                Success_Label.Visible = true;
                 Response.Redirect("LoginPage.aspx");
             }
             else       

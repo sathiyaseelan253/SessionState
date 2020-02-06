@@ -164,8 +164,9 @@
     <tr>
         <td colspan="2" class="auto-style14"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Submit" runat="server" Height="51px" OnClick="Submit_Click" Text="Submit" Width="184px" />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="Error" runat="server" Text="Error occured" ></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Error" runat="server" Text="Error occured" ></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Success_Label" runat="server" Text="Successfully created" Visible="false"></asp:Label>
         </td>
     </tr>
 </table>
