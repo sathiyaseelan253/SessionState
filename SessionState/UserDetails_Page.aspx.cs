@@ -7,6 +7,7 @@ namespace SessionState
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Error.Visible = false;
             LoadCityDropDownList();
             DisplayCity();
         }
@@ -42,7 +43,9 @@ namespace SessionState
             ListItem li6 = new ListItem("Salem");
             ddlCity.Items.Add(li6);
         }
-        internal  void btnSendData_Click(object sender, EventArgs e)
+     
+
+        protected void Submit_Click(object sender, EventArgs e)
         {
             string firstName = txtFirstName.Text;
             string lastName = txtLastName.Text;
@@ -55,11 +58,16 @@ namespace SessionState
             string password = txtPassword.Text;
             new User(firstName, lastName, email, age, Address, Qualification, City, PinCode, password);
 
-            UserRepository.ConnectToDatabase();
-            
-            
-            Response.Redirect("DisplayForm.aspx");
-        }
+            bool status=UserRepository.ConnectToDatabase();
+            if (status)
+            {
 
+                  Response.Redirect("DisplayForm.aspx");
+                Response.Redirect("LoginPage.aspx");
+            }
+            else       
+                Error.Visible = true;
+            
+        }
     }
 }

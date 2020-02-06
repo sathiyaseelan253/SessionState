@@ -32,44 +32,44 @@ namespace SessionState
              
             }
         }
-        public static void ConnectToDatabase()
+        public static bool ConnectToDatabase()
         {
             
             
             using (SqlConnection connection = new SqlConnection(path))
             {
-                SqlCommand command = new SqlCommand("spInsertIntoTables", connection);
+                connection.Open();
+                SqlCommand command = new SqlCommand("spInsertToTables", connection);
                 command.CommandType = CommandType.StoredProcedure;
-                command.Parameters.Add("@FirstName", SqlDbType.VarChar).
-                    
-                    
-                    Value = User.FirstName;
+                command.Parameters.AddWithValue("@FirstName",User.FirstName);
 
-                command.Parameters.Add("@LastName", SqlDbType.VarChar).Value = User.LastName;
+                command.Parameters.AddWithValue("@LastName", User.LastName);
 
-                command.Parameters.Add("@Email", SqlDbType.VarChar).Value = User.Email;
+                command.Parameters.AddWithValue("@Email", User.Email);
 
-                command.Parameters.Add("@age", SqlDbType.Int).Value =User.Age;
+                command.Parameters.AddWithValue("@age",User.Age);
 
-                command.Parameters.Add("@address", SqlDbType.VarChar).Value = User.Address;
+                command.Parameters.AddWithValue("@address",User.Address);
 
-                command.Parameters.Add("@qualification", SqlDbType.VarChar).Value = User.Qualification;
+                command.Parameters.AddWithValue("@qualification",User.Qualification);
 
-                command.Parameters.Add("@city", SqlDbType.VarChar).Value = User.City;
+                command.Parameters.AddWithValue("@city",User.City);
 
-                command.Parameters.Add("@pincode", SqlDbType.VarChar).Value = User.Pincode;
+                command.Parameters.AddWithValue("@pincode", User.Pincode);
 
-                command.Parameters.Add("@password", SqlDbType.VarChar).Value = User.Password;
+                command.Parameters.AddWithValue("@password",User.Password);
 
                 try
                 {
-                    connection.Open();
+                   
                     command.ExecuteNonQuery();
+                    return true;
                 }
                 catch (Exception e)
                 {
-
-                    System.Console.WriteLine(e.Message);
+                    
+                    return false;
+                    
                 }
 
             }

@@ -25,7 +25,7 @@ namespace SessionState
         {
             FirstName = fname;
             LastName = lName;
-            Email = Email;
+            Email = email;
             Address = address;
             City = city;
             Age = age;

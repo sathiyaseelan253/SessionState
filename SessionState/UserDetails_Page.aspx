@@ -13,9 +13,6 @@
             height: 892px;
             width: 517px;
         }
-        .auto-style4 {
-           height: 40px;
-        }
         .auto-style5 {
            height: 40px;
         }
@@ -166,8 +163,9 @@
     </tr>
     <tr>
         <td colspan="2" class="auto-style14"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnSendData" runat="server" 
-            Text="Submit" onclick="btnSendData_Click" CssClass="auto-style4" Height="41px" Width="149px" />
+            <asp:Button ID="Submit" runat="server" Height="51px" OnClick="Submit_Click" Text="Submit" Width="184px" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Error" runat="server" Text="Error occured" ></asp:Label>
         </td>
     </tr>
 </table>

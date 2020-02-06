@@ -11,7 +11,7 @@ namespace SessionState
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lbltext.Visible = false;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -22,13 +22,11 @@ namespace SessionState
             bool status=UserRepository.CheckUser(firstName,password);
             if (status)
             {
-                lbltext.Visible = false;
                 Response.Redirect("Greetings.aspx");
             }
             else
-            {
-                lbltext.Visible = true;
-            }
+            lbltext.Visible = true;
+          
 
         }
 
@@ -36,9 +34,8 @@ namespace SessionState
 
         protected void SubmitBtn_Click(object sender, EventArgs e)
         {
-            UserDetails_Page page = new UserDetails_Page();
-            page.btnSendData_Click(sender,e);
           
+            Response.Redirect("UserDetails_Page.aspx");
 
         }
     }
