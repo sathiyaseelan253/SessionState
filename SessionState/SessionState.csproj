@@ -67,24 +67,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Connection.aspx" />
     <Content Include="DisplayForm.aspx" />
     <Content Include="Greetings.aspx" />
     <Content Include="Ielts.jpg" />
     <Content Include="learning-styles.jpg" />
     <Content Include="LoginPage.aspx" />
-    <Content Include="single.jpg" />
     <Content Include="UserDetails_Page.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connection.aspx.cs">
-      <DependentUpon>Connection.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Connection.aspx.designer.cs">
-      <DependentUpon>Connection.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DisplayForm.aspx.cs">
       <DependentUpon>DisplayForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

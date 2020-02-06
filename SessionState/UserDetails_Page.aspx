@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserDetails_Page.aspx.cs" Inherits="SessionState.UserDetails_Page" MasterPageFile="~/StePage.Master" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="PlaceForContent" runat="server">
-
+    <title>British council</title>
     <div>
         <div style="font-family: Arial">
             <table class="auto-style2" align="center">
