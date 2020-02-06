@@ -7,19 +7,19 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{AD1FEA57-ECBB-40B2-A112-863B1BA3B27B}</ProjectGuid>
+    <ProjectGuid>{F66EDB98-D4A0-4056-9CB3-069BB350B4C8}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SessionState</RootNamespace>
-    <AssemblyName>SessionState</AssemblyName>
+    <RootNamespace>Online_Ticket_Booking</RootNamespace>
+    <AssemblyName>Online_Ticket_Booking</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44355</IISExpressSSLPort>
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
+    <IISExpressSSLPort>44354</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -67,66 +67,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Connection.aspx" />
-    <Content Include="DisplayForm.aspx" />
-    <Content Include="Greetings.aspx" />
-    <Content Include="Ielts.jpg" />
-    <Content Include="learning-styles.jpg" />
-    <Content Include="LoginPage.aspx" />
-    <Content Include="single.jpg" />
-    <Content Include="UserDetails_Page.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connection.aspx.cs">
-      <DependentUpon>Connection.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Connection.aspx.designer.cs">
-      <DependentUpon>Connection.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DisplayForm.aspx.cs">
-      <DependentUpon>DisplayForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DisplayForm.aspx.designer.cs">
-      <DependentUpon>DisplayForm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Greetings.aspx.cs">
-      <DependentUpon>Greetings.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Greetings.aspx.designer.cs">
-      <DependentUpon>Greetings.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="LoginPage.aspx.cs">
-      <DependentUpon>LoginPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LoginPage.aspx.designer.cs">
-      <DependentUpon>LoginPage.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StePage.Master.cs">
-      <DependentUpon>StePage.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="StePage.Master.designer.cs">
-      <DependentUpon>StePage.Master</DependentUpon>
-    </Compile>
-    <Compile Include="User.cs" />
-    <Compile Include="UserDetails_Page.aspx.cs">
-      <DependentUpon>UserDetails_Page.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserDetails_Page.aspx.designer.cs">
-      <DependentUpon>UserDetails_Page.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="StePage.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -147,9 +94,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50067</DevelopmentServerPort>
+          <DevelopmentServerPort>53099</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44355/</IISUrl>
+          <IISUrl>https://localhost:44354/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -33,8 +33,7 @@ namespace SessionState
             }
         }
         public static bool ConnectToDatabase()
-        {
-            
+        {    
             
             using (SqlConnection connection = new SqlConnection(path))
             {
